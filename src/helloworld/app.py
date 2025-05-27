@@ -10,6 +10,7 @@ class DateInputApp(toga.App):
 
         self.date_input = toga.DateInput(style=Pack(padding=5))
         self.date_input.on_change = self.on_date_change
+        self.date_input.color = 'red'
 
         self.status_label = toga.Label("Selected Date: None", style=Pack(padding=5))
 
