@@ -8,9 +8,8 @@ class DateInputApp(toga.App):
     def startup(self):
         main_box = toga.Box(style=Pack(direction=COLUMN, padding=10, gap=10))
 
-        self.date_input = toga.DateInput(style=Pack(padding=5))
+        self.date_input = toga.TimeInput(style=Pack(padding=5))
         self.date_input.on_change = self.on_date_change
-        self.date_input.color = 'red'
 
         self.status_label = toga.Label("Selected Date: None", style=Pack(padding=5))
 
